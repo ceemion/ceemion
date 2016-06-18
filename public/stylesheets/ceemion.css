@@ -1,0 +1,208 @@
+@import 'foundation.css';
+
+/* SET FONTS */
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700|Dawning+of+a+New+Day);
+@font-face {
+    font-family: 'Dawning';
+    src: url('fonts/DawningofaNewDay.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'QuickSand';
+    src: url('fonts/Quicksand_Book.otf') format('truetype');
+}
+
+
+/* BODY AND OTHER MIX */
+body {
+    font-family: 'QuickSand', 'Quicksand',  sans-serif;
+    background-color: transparent;
+}
+
+@media (max-width: 410px) {
+    #head-nav {
+        text-align: center;
+    }
+
+    #mini-content h4 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    #mini-content h4 {
+        text-align: center;
+    }
+}
+
+a {
+    color: #000;
+}
+
+ul.social-group-top li {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+ul.social-group-top li i {
+    font-size: 1.5em;
+}
+
+ul.social-group-top a:hover {
+    color: #975052;
+}
+
+#head-text,
+#about h4,
+#mini-content h4 {
+    font-family: 'Dawning', 'Dawning of a New Day', cursive;
+}
+
+#head-text {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+img.head-img-inline {
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+img.head-img-inline:hover,
+.wimg:hover {
+    -webkit-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    filter: none;
+    cursor: pointer;
+}
+
+img.head-img-inline:hover {
+    -moz-box-shadow: 0 0 15px 0 #999;
+    -webkit-box-shadow: 0 0 15px 0 #999;
+    box-shadow: 0 0 15px 0 #999;
+}
+
+
+/* MAIN HEAD IMAGE */
+.head-image {
+    max-width: 40%;
+}
+
+.head-image img {
+    border-radius: 100%;
+}
+
+
+/* ABOUT ME */
+#about {
+    margin-bottom: 50px;
+}
+
+#about h4 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#about p {
+    text-align: justify;
+}
+
+
+/* MINI CONTENT */
+#mini-content h4 {
+    font-size: 2em;
+}
+
+.linx {
+    height: 187px;
+    width: 287px;
+    -webkit-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    filter: grayscale(80%);
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+span.mini-text {
+    background: rgba(151, 80, 82, 0.7);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 187px;
+    width: 289px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    margin-left: 0.9375rem;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+span.mini-text h4,
+span.mini-text p {
+    color: white;
+    font-size: .8em;
+}
+
+.mini-mini:hover span.mini-text {
+    opacity: 1;
+}
+
+span.mini-text span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* MY WORk */
+#my-work {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wimg {
+    -webkit-filter: grayscale(85%);
+    -ms-filter: grayscale(85%);
+    filter: grayscale(85%);
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* CONTACT */
+#contact {
+    margin-bottom: 40px;
+}
+
+#contact a {
+    font-style: italic;
+}
+
+#contact a:hover {
+    color: #975052;
+}
+
+
+/* FOOTER */
+footer p {
+    text-align: center;
+}
